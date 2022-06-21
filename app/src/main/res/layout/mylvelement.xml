@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="13dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        app:cardBackgroundColor="#FFFFFF"
+        app:cardElevation="15dp"
+        app:cardMaxElevation="15dp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvarrivaltime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="112dp"
+                android:text="Arrival Time:" />
+
+            <TextView
+                android:id="@+id/tvfrom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="144dp"
+                android:text="From:" />
+
+            <TextView
+                android:id="@+id/tvflightcode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="48dp"
+                android:text="Flight Code:" />
+
+            <TextView
+                android:id="@+id/tvdestination"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvdate"
+                android:layout_marginStart="22dp"
+                android:layout_marginTop="107dp"
+                android:layout_toEndOf="@+id/imageView7"
+                android:text="Destination:" />
+
+            <TextView
+                android:id="@+id/tvflighttime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="176dp"
+                android:layout_marginTop="112dp"
+                android:text="Flight Time:" />
+
+            <TextView
+                android:id="@+id/tvdeparturetime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="80dp"
+                android:text="Departure Time:" />
+
+            <TextView
+                android:id="@+id/tvairline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="Airline:" />
+
+            <TextView
+                android:id="@+id/tvseatclass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="176dp"
+                android:layout_marginTop="48dp"
+                android:text="Seat Class:" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="102dp"
+                android:layout_height="26dp"
+                android:layout_below="@+id/tvdate"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="106dp"
+                android:layout_toEndOf="@+id/tvfrom"
+                app:srcCompat="@drawable/arrows" />
+
+            <TextView
+                android:id="@+id/tvdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="176dp"
+                android:layout_marginTop="16dp"
+                android:text="Date of Flight:" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

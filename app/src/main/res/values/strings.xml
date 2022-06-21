@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">travel_with_me</string>
+    <string name="urlServer">http://172.22.0.228:8000</string>
+</resources>
