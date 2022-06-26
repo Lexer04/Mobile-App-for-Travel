@@ -8,6 +8,8 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -33,6 +35,8 @@ public class login extends AppCompatActivity {
     public String user, password;
     public static String a, b, c;
 
+    private View decorView;
+
     private View.OnClickListener myClickListener = new View.OnClickListener() {
         @Override
         public void onClick(View view) {
@@ -45,7 +49,7 @@ public class login extends AppCompatActivity {
                     if (user.equals("") | password.equals("")) {
                         Log.d("URL 1", "Kosong");
                     } else {
-                        sendUrl = "http://172.22.0.228:8000/user/" + user;
+                        sendUrl = "http://192.168.1.12:8000/user/" + user;
                         Log.d("URL 2", "TES");
                         Log.d("URL 2", sendUrl);
                         new ReqTask().execute(sendUrl, "GET");
@@ -74,10 +78,28 @@ public class login extends AppCompatActivity {
         }
     }
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        getSupportActionBar().hide();
+
         setContentView(R.layout.login);
+
+//        decorView = getWindow().getDecorView();
+//        decorView.setOnSystemUiVisibilityChangeListener(new View.OnSystemUiVisibilityChangeListener() {
+//            @Override
+//            public void onSystemUiVisibilityChange(int visibility) {
+//                if (visibility == 0)
+//                    decorView.setSystemUiVisibility(hideSystemBars);
+//            }
+//        });
+
+
 
 //        url = "http://192.168.1.34:8000";
         b1 = (Button) findViewById(R.id.login);
@@ -89,6 +111,22 @@ public class login extends AppCompatActivity {
         mydb = new DBHandler(this);
 //        getData();
     }
+
+//    @Override
+//    private void onWindowsFocusChanged(boolean hasFocus) {
+//        super.onWindowFocusChanged(hasFocus);
+//        if (hasFocus){
+//            decorView.setSystemUiVisibility(hideSystemBars);
+//        }
+//    }
+//
+//    private int hideSystemBars(){
+//        return View.SYSTEM_UI_FLAG_LAYOUT_STABLE
+//                | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY
+//                | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
+//                | View.SYSTEM_UI_FLAG_FULLSCREEN
+//                | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION;
+//    }
 
     class ReqTask extends AsyncTask<String, String, String> {
 

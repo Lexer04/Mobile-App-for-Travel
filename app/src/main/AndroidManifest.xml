@@ -11,7 +11,7 @@
         android:usesCleartextTraffic="true"
         android:theme="@style/Theme.Travel_with_me">
         <activity
-            android:name=".paymentinfo"
+            android:name=".ticketdetails"
             android:exported="false" />
         <activity
             android:name=".book"

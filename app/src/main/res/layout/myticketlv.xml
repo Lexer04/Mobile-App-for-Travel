@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="373dp"
+        android:layout_height="416dp"
+        android:layout_margin="20dp"
+        app:cardBackgroundColor="#FFFFFF"
+        app:cardElevation="15dp"
+        app:cardMaxElevation="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/airlineticket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/passengerticket"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="19dp"
+                android:layout_marginTop="22dp"
+                android:fontFamily="@font/baloo"
+                android:text="Airline:" />
+
+            <TextView
+                android:id="@+id/flightcodeticket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/airlineticket"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="22dp"
+                android:fontFamily="@font/baloo"
+                android:text="Flight Code:" />
+
+            <TextView
+                android:id="@+id/seatclassticket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dateticket"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="178dp"
+                android:layout_marginTop="22dp"
+                android:fontFamily="@font/baloo"
+                android:text="Seat Class:" />
+
+            <TextView
+                android:id="@+id/departuretimeticket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/flightcodeticket"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="22dp"
+                android:fontFamily="@font/baloo"
+                android:text="Departure Time:" />
+
+            <TextView
+                android:id="@+id/arrivaltimeticket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/departuretimeticket"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="22dp"
+                android:fontFamily="@font/baloo"
+                android:text="Arrival Time:" />
+
+            <TextView
+                android:id="@+id/flighttimeticket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/seatclassticket"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="176dp"
+                android:layout_marginTop="22dp"
+                android:fontFamily="@font/baloo"
+                android:text="Flight Time:" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="102dp"
+                android:layout_height="26dp"
+                android:layout_below="@+id/dateticket"
+                android:layout_marginStart="27dp"
+                android:layout_marginTop="152dp"
+                android:layout_toEndOf="@+id/fromticket"
+                app:srcCompat="@drawable/arrows" />
+
+            <TextView
+                android:id="@+id/destinationticket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="-7dp"
+                android:layout_marginTop="296dp"
+                android:layout_toEndOf="@+id/imageView7"
+                android:fontFamily="@font/baloo"
+                android:text="Destination:" />
+
+            <TextView
+                android:id="@+id/fromticket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/arrivaltimeticket"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="22dp"
+                android:fontFamily="@font/baloo"
+                android:text="From:" />
+
+            <TextView
+                android:id="@+id/dateticket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="178dp"
+                android:layout_marginTop="118dp"
+                android:fontFamily="@font/baloo"
+                android:text="Date of Flight:" />
+
+            <TextView
+                android:id="@+id/nameticket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="19dp"
+                android:fontFamily="@font/baloo"
+                android:text="Name:"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/passengerticket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nameticket"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="22dp"
+                android:fontFamily="@font/baloo"
+                android:text="Total Passenger:" />
+
+            <TextView
+                android:id="@+id/statusticket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fromticket"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="22dp"
+                android:fontFamily="@font/baloo"
+                android:text="Status:"
+                android:textSize="20sp"/>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

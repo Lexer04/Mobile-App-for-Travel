@@ -6,6 +6,16 @@
     android:layout_height="match_parent"
     android:background="@color/backgroundcolor">
 
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="443dp"
+        android:layout_height="928dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/background" />
+
     <View
         android:id="@+id/view4"
         android:layout_width="411dp"
@@ -22,13 +32,14 @@
         android:id="@+id/travel2"
         android:layout_width="173dp"
         android:layout_height="48dp"
-        android:layout_marginBottom="664dp"
         android:fontFamily="@font/baloo"
         android:text="Travel With Me?"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.033" />
 
     <ImageView
         android:id="@+id/home"
@@ -68,7 +79,7 @@
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            app:cardBackgroundColor="#1CBFD0"
+            app:cardBackgroundColor="#664B4875"
             app:cardElevation="20dp"
             app:cardMaxElevation="20dp">
 

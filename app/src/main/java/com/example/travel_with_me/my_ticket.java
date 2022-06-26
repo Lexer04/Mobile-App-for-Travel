@@ -37,7 +37,7 @@ public class my_ticket extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.my_ticket);
+//        setContentView(R.layout.my_ticket);
 
         image1 = (ImageView) findViewById(R.id.home);
         image1.setOnClickListener(myClickListener);

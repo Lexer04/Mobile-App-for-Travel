@@ -7,6 +7,16 @@
     android:background="@color/backgroundcolor">
 
     <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="443dp"
+        android:layout_height="928dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/background" />
+
+    <ImageView
         android:id="@+id/imageView"
         android:layout_width="338dp"
         android:layout_height="553dp"

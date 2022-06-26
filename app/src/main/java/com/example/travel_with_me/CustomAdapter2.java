@@ -9,17 +9,17 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-class CustomAdapter extends BaseAdapter{
-
+public class CustomAdapter2 extends BaseAdapter {
     Context c;
     ArrayList id, airline, flightcode, from, destination,
-            departuretime, arrivaltime, flighttime, date, seatclass, price, name;
+            departuretime, arrivaltime, flighttime, date, seatclass, price, name, passenger, status;
     LayoutInflater inflater;
 
-    public CustomAdapter (Context c, ArrayList airline, ArrayList flightcode,
+    public CustomAdapter2 (Context c, ArrayList airline, ArrayList flightcode,
                           ArrayList from, ArrayList destination, ArrayList departuretime,
                           ArrayList arrivaltime, ArrayList flighttime, ArrayList date,
-                          ArrayList seatclass, ArrayList price, ArrayList name) {
+                          ArrayList seatclass, ArrayList price, ArrayList name,
+                           ArrayList passenger, ArrayList status) {
         this.c = c;
 //        this.id = id;
         this.airline = airline;
@@ -32,6 +32,9 @@ class CustomAdapter extends BaseAdapter{
         this.date = date;
         this.seatclass = seatclass;
         this.price = price;
+        this.name = name;
+        this.passenger = passenger;
+        this.status = status;
         inflater = LayoutInflater.from(c);
     }
 
@@ -52,18 +55,20 @@ class CustomAdapter extends BaseAdapter{
 
     @Override
     public View getView(int i, View view, ViewGroup viewGroup) {
-        view = inflater.inflate(R.layout.mylvelement, null);
+        view = inflater.inflate(R.layout.myticketlv, null);
 //        TextView myid = (TextView) view.findViewById(R.id.idnumber);
-        TextView myairline = (TextView) view.findViewById(R.id.tvairline);
-        TextView myflightcode = (TextView) view.findViewById(R.id.tvflightcode);
-        TextView myfrom = (TextView) view.findViewById(R.id.tvfrom);
-        TextView mydestination = (TextView) view.findViewById(R.id.tvdestination);
-        TextView mydeparturetime = (TextView) view.findViewById(R.id.tvdeparturetime);
-        TextView myarrivaltime = (TextView) view.findViewById(R.id.tvarrivaltime);
-        TextView myflighttime = (TextView) view.findViewById(R.id.tvflighttime);
-        TextView mydate = (TextView) view.findViewById(R.id.tvdate);
-        TextView myseatclass = (TextView) view.findViewById(R.id.tvseatclass);
-        TextView myprice = (TextView) view.findViewById(R.id.tvprice);
+        TextView myairline = (TextView) view.findViewById(R.id.airlineticket);
+        TextView myflightcode = (TextView) view.findViewById(R.id.flightcodeticket);
+        TextView myfrom = (TextView) view.findViewById(R.id.fromticket);
+        TextView mydestination = (TextView) view.findViewById(R.id.destinationticket);
+        TextView mydeparturetime = (TextView) view.findViewById(R.id.departuretimeticket);
+        TextView myarrivaltime = (TextView) view.findViewById(R.id.arrivaltimeticket);
+        TextView myflighttime = (TextView) view.findViewById(R.id.flighttimeticket);
+        TextView mydate = (TextView) view.findViewById(R.id.dateticket);
+        TextView myseatclass = (TextView) view.findViewById(R.id.seatclassticket);
+        TextView mypassenger = (TextView) view.findViewById(R.id.passengerticket);
+        TextView myname = (TextView) view.findViewById(R.id.nameticket);
+        TextView mystatus = (TextView) view.findViewById(R.id.statusticket);
 //        myid.setText(String.valueOf(id.get(i)));
         myairline.setText(String.valueOf("Airline: "+airline.get(i)));
         myflightcode.setText(String.valueOf("Flight Code: "+flightcode.get(i)));
@@ -74,9 +79,9 @@ class CustomAdapter extends BaseAdapter{
         myflighttime.setText(String.valueOf("Flight Time: "+flighttime.get(i)));
         mydate.setText(String.valueOf("Date: "+date.get(i)));
         myseatclass.setText(String.valueOf("Seat Class: "+seatclass.get(i)));
-        myprice.setText(String.valueOf("Ticket Price: "+price.get(i)));
+        mypassenger.setText(String.valueOf("Passenger: "+passenger.get(i)));
+        myname.setText(String.valueOf("Name: "+name.get(i)));
+        mystatus.setText(String.valueOf("Status: "+status.get(i)));
         return view;
     }
-
 }
-

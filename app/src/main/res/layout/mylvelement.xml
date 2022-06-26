@@ -8,14 +8,14 @@
     tools:layout_editor_absoluteY="13dp">
 
     <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="373dp"
+        android:layout_height="215dp"
         android:layout_margin="20dp"
         app:cardBackgroundColor="#FFFFFF"
         app:cardElevation="15dp"
         app:cardMaxElevation="15dp"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="10dp">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -27,6 +27,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="112dp"
+                android:fontFamily="@font/baloo"
                 android:text="Arrival Time:" />
 
             <TextView
@@ -35,6 +36,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="144dp"
+                android:fontFamily="@font/baloo"
                 android:text="From:" />
 
             <TextView
@@ -43,6 +45,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="48dp"
+                android:fontFamily="@font/baloo"
                 android:text="Flight Code:" />
 
             <TextView
@@ -53,6 +56,7 @@
                 android:layout_marginStart="22dp"
                 android:layout_marginTop="107dp"
                 android:layout_toEndOf="@+id/imageView7"
+                android:fontFamily="@font/baloo"
                 android:text="Destination:" />
 
             <TextView
@@ -61,6 +65,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="176dp"
                 android:layout_marginTop="112dp"
+                android:fontFamily="@font/baloo"
                 android:text="Flight Time:" />
 
             <TextView
@@ -69,6 +74,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="80dp"
+                android:fontFamily="@font/baloo"
                 android:text="Departure Time:" />
 
             <TextView
@@ -77,6 +83,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="16dp"
+                android:fontFamily="@font/baloo"
                 android:text="Airline:" />
 
             <TextView
@@ -85,6 +92,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="176dp"
                 android:layout_marginTop="48dp"
+                android:fontFamily="@font/baloo"
                 android:text="Seat Class:" />
 
             <ImageView
@@ -103,7 +111,19 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="176dp"
                 android:layout_marginTop="16dp"
+                android:fontFamily="@font/baloo"
                 android:text="Date of Flight:" />
+
+            <TextView
+                android:id="@+id/tvprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvfrom"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="17dp"
+                android:layout_marginTop="14dp"
+                android:fontFamily="@font/baloo"
+                android:text="Ticket Price:" />
 
         </RelativeLayout>
 

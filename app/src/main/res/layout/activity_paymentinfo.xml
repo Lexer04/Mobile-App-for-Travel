@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".paymentinfo"
+    tools:context=".ticketdetails"
     android:background="@color/backgroundcolor">
 
     <View
@@ -91,7 +91,10 @@
         android:id="@+id/imageView2"
         android:layout_width="221dp"
         android:layout_height="247dp"
-        app:srcCompat="@drawable/plane"
-        tools:layout_editor_absoluteX="95dp"
-        tools:layout_editor_absoluteY="87dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.2"
+        app:srcCompat="@drawable/plane" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,6 +1,320 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/backgroundcolor">
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="443dp"
+        android:layout_height="928dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.502"
+        app:srcCompat="@drawable/background" />
+
+<!--    <ImageView-->
+<!--        android:id="@+id/imageView5"-->
+<!--        android:layout_width="221dp"-->
+<!--        android:layout_height="247dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.146"-->
+<!--        app:srcCompat="@drawable/plane" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/textView11"-->
+<!--        android:layout_width="276dp"-->
+<!--        android:layout_height="123dp"-->
+<!--        android:fontFamily="@font/baloo"-->
+<!--        android:text="You can view your ticket in the Booked Ticket"-->
+<!--        android:textSize="24sp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.518"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/textView12"-->
+<!--        android:layout_width="281dp"-->
+<!--        android:layout_height="40dp"-->
+<!--        android:fontFamily="@font/baloo"-->
+<!--        android:text="Thank you for your book!"-->
+<!--        android:textSize="24sp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.117" />-->
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="411dp"
+        android:layout_height="71dp"
+        android:background="#DADADA"
+        android:elevation="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/travel2"
+        android:layout_width="173dp"
+        android:layout_height="48dp"
+        android:elevation="20dp"
+        android:fontFamily="@font/baloo"
+        android:text="Travel With Me?"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.033" />
+
+    <ImageView
+        android:id="@+id/home"
+        android:layout_width="53dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="88dp"
+        android:elevation="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.026"
+        app:srcCompat="@drawable/rumah" />
+
+    <ImageView
+        android:id="@+id/logout"
+        android:layout_width="52dp"
+        android:layout_height="46dp"
+        android:elevation="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.955"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023"
+        app:srcCompat="@drawable/logout" />
+
+    <LinearLayout
+        android:layout_width="394dp"
+        android:layout_height="654dp"
+        android:elevation="20dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.835">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="352dp"
+            android:layout_height="628dp"
+            android:layout_margin="20dp"
+            app:cardBackgroundColor="#FFFFFF"
+            app:cardElevation="20dp"
+            app:cardMaxElevation="20dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tvarrivaltime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvdeparturetime"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="42dp"
+                    android:fontFamily="@font/baloo"
+                    android:text="Arrival Time:"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tvfrom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvarrivaltime"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="42dp"
+                    android:fontFamily="@font/baloo"
+                    android:text="From:"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tvflightcode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvairline"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="42dp"
+                    android:fontFamily="@font/baloo"
+                    android:text="Flight Code:"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tvdestination"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvfrom"
+                    android:layout_alignStart="@+id/tvfrom"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="86dp"
+                    android:fontFamily="@font/baloo"
+                    android:text="Destination:"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tvdeparturetime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvflightcode"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="42dp"
+                    android:fontFamily="@font/baloo"
+                    android:text="Departure Time:"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tvairline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/baloo"
+                    android:text="Airline:"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tvdate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="185dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="27dp"
+                    android:fontFamily="@font/baloo"
+                    android:text="Date:"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tvflighttime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvseatclass"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="184dp"
+                    android:layout_marginTop="42dp"
+                    android:fontFamily="@font/baloo"
+                    android:text="Flight Time:"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tvseatclass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvdate"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="184dp"
+                    android:layout_marginTop="42dp"
+                    android:fontFamily="@font/baloo"
+                    android:text="Seat Class:"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvpassenger"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="129dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="129dp"
+                    android:layout_marginBottom="19dp"
+                    android:text="Book Now"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tvprice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvdestination"
+                    android:layout_marginStart="7dp"
+                    android:layout_marginTop="21dp"
+                    android:layout_toEndOf="@+id/tvprice2"
+                    android:fontFamily="@font/baloo"
+                    android:text="Ticket Price:"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tvprice2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvdestination"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="21dp"
+                    android:fontFamily="@font/baloo"
+                    android:text="Ticket Price:"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="42dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvprice"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="27dp"
+                    android:layout_marginEnd="87dp"
+                    android:text="+"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="42dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvprice2"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="86dp"
+                    android:layout_marginTop="27dp"
+                    android:text="-"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tvpassenger"
+                    android:layout_width="67dp"
+                    android:layout_height="23dp"
+                    android:layout_below="@+id/tvprice"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="36dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_toStartOf="@+id/button2"
+                    android:layout_toEndOf="@+id/button3"
+                    android:fontFamily="@font/baloo"
+                    android:text="TextView"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
