@@ -200,23 +200,23 @@ public class book extends AppCompatActivity {
                                 departuretime, arrivaltime, flighttime, date, seatclass, price, name, passenger, status);
                         mylv.setAdapter(customAdapter2);
 
-                        mylv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-                            @Override
-                            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                                Intent intent = new Intent(book.this, ticketdetails.class);
-                                intent.putExtra("Airline", airline.get(i));
-                                intent.putExtra("Flight Code", flightcode.get(i));
-                                intent.putExtra("From", from.get(i));
-                                intent.putExtra("Flight Time", flighttime.get(i));
-                                intent.putExtra("Destination", destination.get(i));
-                                intent.putExtra("Departure Time", departuretime.get(i));
-                                intent.putExtra("Arrival Time", arrivaltime.get(i));
-                                intent.putExtra("Date", date.get(i));
-                                intent.putExtra("Seat Class", seatclass.get(i));
-                                intent.putExtra("Price", price.get(i));
-                                startActivity(intent);
-                            }
-                        });
+//                        mylv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+//                            @Override
+//                            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+//                                Intent intent = new Intent(book.this, ticketdetails.class);
+//                                intent.putExtra("Airline", airline.get(i));
+//                                intent.putExtra("Flight Code", flightcode.get(i));
+//                                intent.putExtra("From", from.get(i));
+//                                intent.putExtra("Flight Time", flighttime.get(i));
+//                                intent.putExtra("Destination", destination.get(i));
+//                                intent.putExtra("Departure Time", departuretime.get(i));
+//                                intent.putExtra("Arrival Time", arrivaltime.get(i));
+//                                intent.putExtra("Date", date.get(i));
+//                                intent.putExtra("Seat Class", seatclass.get(i));
+//                                intent.putExtra("Price", price.get(i));
+//                                startActivity(intent);
+//                            }
+//                        });
                         //if (myRecObj.getString("Ticket").equals("Available Tickets")) {
 //
 //                        mylv.setOnItemClickListener(new AdapterView.OnItemClickListener() {

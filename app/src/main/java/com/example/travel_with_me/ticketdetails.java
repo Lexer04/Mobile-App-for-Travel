@@ -82,7 +82,7 @@ public class ticketdetails extends AppCompatActivity {
 
     };
     private void goToPayment() {
-        Intent intent = new Intent(this, home.class);
+        Intent intent = new Intent(this, payment.class);
         startActivity(intent);
     }
 

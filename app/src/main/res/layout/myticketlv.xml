@@ -9,9 +9,8 @@
         android:layout_width="373dp"
         android:layout_height="416dp"
         android:layout_margin="20dp"
-        app:cardBackgroundColor="#FFFFFF"
-        app:cardElevation="15dp"
-        app:cardMaxElevation="15dp"
+        app:cardElevation="30dp"
+        app:cardMaxElevation="30dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -161,7 +160,7 @@
                 android:layout_marginTop="22dp"
                 android:fontFamily="@font/baloo"
                 android:text="Status:"
-                android:textSize="20sp"/>
+                android:textSize="20sp" />
 
         </RelativeLayout>
     </androidx.cardview.widget.CardView>

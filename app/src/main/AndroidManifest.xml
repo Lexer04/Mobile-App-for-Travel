@@ -26,6 +26,9 @@
             android:name=".home"
             android:exported="false" />
         <activity
+            android:name=".payment"
+            android:exported="false" />
+        <activity
             android:name=".login"
             android:exported="true">
             <intent-filter>
